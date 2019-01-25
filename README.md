@@ -1,3 +1,3 @@
-# README #
+﻿# README #
 
-Jednostavan 3D RPG za kolegij Napredni razvoj računalnih igara
+Jednostavan 3D Survival Shooter za kolegij Napredni razvoj računalnih igara
