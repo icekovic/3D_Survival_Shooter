@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
-
+    public Light faceLight;
 
     float timer;
     Ray shootRay = new Ray();
@@ -47,6 +47,7 @@ public class PlayerShooting : MonoBehaviour
     public void DisableEffects ()
     {
         gunLine.enabled = false;
+        faceLight.enabled = false;
         gunLight.enabled = false;
     }
 
@@ -58,6 +59,7 @@ public class PlayerShooting : MonoBehaviour
         gunAudio.Play ();
 
         gunLight.enabled = true;
+        faceLight.enabled = true;
 
         gunParticles.Stop ();
         gunParticles.Play ();
