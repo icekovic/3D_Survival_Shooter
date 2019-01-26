@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class LevelController : MonoBehaviour
 {
-
     void Start()
     {
         
@@ -25,5 +24,17 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Quit game...");
         Application.Quit();
+    }
+
+    public void Nextlevel(string level)
+    {
+
+    }
+
+    public void Restartlevel()
+    {
+        Time.timeScale = 1f;
+        //collectiblesManager.ResetCoinsCount();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
