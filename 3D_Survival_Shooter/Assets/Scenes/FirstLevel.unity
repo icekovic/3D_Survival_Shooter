@@ -2601,7 +2601,7 @@ GameObject:
   - component: {fileID: 1006108270}
   - component: {fileID: 1006108269}
   - component: {fileID: 1006108268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3044,6 +3044,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7576244924306496397, guid: 4e5a0d387dc27394b81600988ad0216f,
+        type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1940202949}
+    - target: {fileID: 7576244924306496397, guid: 4e5a0d387dc27394b81600988ad0216f,
+        type: 3}
+      propertyPath: faceLight
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5392980319769959394, guid: 4e5a0d387dc27394b81600988ad0216f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3098,16 +3108,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7576244924306496397, guid: 4e5a0d387dc27394b81600988ad0216f,
-        type: 3}
-      propertyPath: healthSlider
-      value: 
-      objectReference: {fileID: 1940202949}
-    - target: {fileID: 7576244924306496397, guid: 4e5a0d387dc27394b81600988ad0216f,
-        type: 3}
-      propertyPath: faceLight
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}

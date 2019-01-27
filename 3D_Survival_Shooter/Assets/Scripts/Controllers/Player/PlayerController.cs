@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     private Vector3 movement;
     private Animator animator;
     private Rigidbody rigidBody;
+    float camRayLength = 100f;
+    int floorMask;
 
     private bool isWalking = false;
     bool isDead = false;
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
         currentHealth = startingHealth;
+        floorMask = LayerMask.GetMask("Floor");
     }
 
     void Start()
@@ -62,12 +65,16 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     public void Turn()
     {
-        Vector3 turnDir = new Vector3(Input.GetAxisRaw("Mouse X"), 0f, Input.GetAxisRaw("Mouse Y"));
+        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (turnDir != Vector3.zero)
+        // Create a RaycastHit variable to store information about what was hit by the ray.
+        RaycastHit floorHit;
+
+        // Perform the raycast and if it hits something on the floor layer...
+        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
         {
             // Create a vector from the player to the point on the floor the raycast from the mouse hit.
-            Vector3 playerToMouse = (transform.position + turnDir) - transform.position;
+            Vector3 playerToMouse = floorHit.point - transform.position;
 
             // Ensure the vector is entirely along the floor plane.
             playerToMouse.y = 0f;
