@@ -5522,7 +5522,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df92faa1fb289c0489fd8b600d9fa636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hellephantHurtSound: {fileID: 8300000, guid: fce027b40770a44298a6f5a4233bfb04, type: 3}
+  hellephantDeathSound: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d,
+    type: 3}
+  zombearHurtSound: {fileID: 8300000, guid: 1d4840678e677424b8921716c72397ea, type: 3}
+  zombearDeathSound: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
+  zombunnyHurtSound: {fileID: 8300000, guid: 02e6208ec76314158a9f548f51fe9f11, type: 3}
+  zombunnyDeathSound: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
+  playerHurtSound: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
   gunshotSound: {fileID: 8300000, guid: fa7f046ce321d4021b5e753bf1152916, type: 3}
+  levelCompletedSound: {fileID: 8300000, guid: 35d34a13d67be92409575d401a420d19, type: 3}
+  gameCompletedSound: {fileID: 8300000, guid: f4d7e6f7a9a5dc94cae95f025ffc81e1, type: 3}
+  gameOverSound: {fileID: 8300000, guid: f5df88227c97c1a40b82c54b711f4f86, type: 3}
 --- !u!1 &2069618557
 GameObject:
   m_ObjectHideFlags: 0
