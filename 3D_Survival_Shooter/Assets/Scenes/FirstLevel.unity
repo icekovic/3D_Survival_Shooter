@@ -5519,24 +5519,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2062396333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db25a434456bad642aaa202f6820bf99, type: 3}
+  m_Script: {fileID: 11500000, guid: df92faa1fb289c0489fd8b600d9fa636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic1: {fileID: 8300000, guid: 4fff99673a41e24439d527ad0bd6b569, type: 3}
-  backgroundMusic2: {fileID: 8300000, guid: fec15a1f89481dd4190a0bc2b963314a, type: 3}
-  backgroundMusic3: {fileID: 8300000, guid: 69dd1140ba1d4ff4e9c0573d02fd5255, type: 3}
-  hellephantDeath: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d, type: 3}
-  hellephantHurt: {fileID: 8300000, guid: fce027b40770a44298a6f5a4233bfb04, type: 3}
-  zombearHurt: {fileID: 8300000, guid: 1d4840678e677424b8921716c72397ea, type: 3}
-  zombearDeath: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
-  zombunnyHurt: {fileID: 8300000, guid: 02e6208ec76314158a9f548f51fe9f11, type: 3}
-  zombunnyDeath: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
-  playerDeath: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  playerHurt: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
-  gunShooting: {fileID: 8300000, guid: fa7f046ce321d4021b5e753bf1152916, type: 3}
-  levelCompleted: {fileID: 8300000, guid: 35d34a13d67be92409575d401a420d19, type: 3}
-  gameCompleted: {fileID: 8300000, guid: f4d7e6f7a9a5dc94cae95f025ffc81e1, type: 3}
-  gameOver: {fileID: 8300000, guid: f5df88227c97c1a40b82c54b711f4f86, type: 3}
+  gunshotSound: {fileID: 8300000, guid: fa7f046ce321d4021b5e753bf1152916, type: 3}
 --- !u!1 &2069618557
 GameObject:
   m_ObjectHideFlags: 0

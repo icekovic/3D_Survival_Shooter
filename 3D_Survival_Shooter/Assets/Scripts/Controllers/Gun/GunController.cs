@@ -26,6 +26,7 @@ public class GunController : MonoBehaviour
             {
                 shotsCounter = timeBetweenShots;
                 BulletController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as BulletController;
+                SoundManager.instance.PlayGunshotSound();
                 newBullet.speed = bulletSpeed;
             }
         }
