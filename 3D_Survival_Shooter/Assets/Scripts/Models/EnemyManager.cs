@@ -4,37 +4,56 @@ using UnityEngine;
 
 public class EnemyManager
 {
-    private int firstLevelEnemyAmount = 10;
-    private int secondLevelEnemyAmount = 15;
-    private int thirdLevelEnemyAmount = 20;
+    private int zombunnyAmount = 10;
+    private int zombearAmount = 15;
+    private int hellephantAmount = 20;
 
-    public void DecrementFirstLevelEnemyAmount()
+    private int zombunnyValue = 10;
+    private int zombearValue = 15;
+    private int hellephantValue = 20;
+
+    public void DecrementZombunnyAmount()
     {
-        firstLevelEnemyAmount--;
+        zombunnyAmount--;
     }
 
-    public void DecrementSecondLevelEnemyAmount()
+    public void DecrementZombearAmount()
     {
-        secondLevelEnemyAmount--;
+        zombearAmount--;
     }
 
-    public void DecrementThirdLevelEnemyAmount()
+    public void DecrementHellephantAmount()
     {
-        thirdLevelEnemyAmount--;
+        hellephantAmount--;
     }
 
-    public int FirstLevelEnemyAmount()
+    public int GetZombunnyAmount()
     {
-        return firstLevelEnemyAmount;
+        return zombunnyAmount;
     }
 
-    public int SecondLevelEnemyAmount()
+    public int GetZombearAmount()
     {
-        return secondLevelEnemyAmount;
+        return zombearAmount;
     }
 
-    public int ThirdLevelEnemyAmount()
+    public int GetHellephantAmount()
     {
-        return thirdLevelEnemyAmount;
+        return hellephantAmount;
+    }
+
+    public int GetZombunnyValue()
+    {
+        return zombunnyValue;
+    }
+
+    public int GetZombearValue()
+    {
+        return zombearValue;
+    }
+
+    public int GetHellephantValue()
+    {
+        return hellephantValue;
     }
 }

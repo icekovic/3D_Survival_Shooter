@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -9,13 +10,19 @@ public class CanvasManager : MonoBehaviour
     public GameObject levelCompleted;
     public GameObject gameCompleted;
     public GameObject gameOver;
+    public Text enemiesToKill;
+    public Text score;
 
-    private LevelTransition levelTransition;
     private static bool isPaused = false;
+
+    private void Awake()
+    {
+
+    }
 
     void Start()
     {
-        levelTransition = FindObjectOfType<LevelTransition>();
+        
     }
 
     void Update()
