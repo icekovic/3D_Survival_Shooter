@@ -10,4 +10,13 @@ public class BulletController : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag.Equals(Tags.Enemy))
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }

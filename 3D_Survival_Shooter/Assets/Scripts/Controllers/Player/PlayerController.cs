@@ -17,14 +17,14 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     bool isDead = false;
     bool damaged = false;
 
-    public int startingHealth = 100;
-    public int currentHealth;
-    public Slider healthSlider;
+    //public int startingHealth;
+    //public int currentHealth;
+    //public Slider healthSlider;
 
     //shooting
-    public int damagePerShot = 20;
-    public float timeBetweenBullets = 0.15f;
-    public float range = 100f;
+    //public int damagePerShot = 20;
+    //public float timeBetweenBullets = 0.15f;
+    //public float range = 100f;
 
     public GunController gun;
 
@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     {
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
-        currentHealth = startingHealth;
+        //startingHealth = 100;
+        //currentHealth = startingHealth;
         floorMask = LayerMask.GetMask("Floor");
     }
 
@@ -102,20 +103,20 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         damaged = true;
 
         // Reduce the current health by the damage amount.
-        currentHealth -= amount;
+        //currentHealth -= amount;
 
         // Set the health bar's value to the current health.
-        healthSlider.value = currentHealth;
+        //healthSlider.value = currentHealth;
 
         // Play the hurt sound effect.
         //playerAudio.Play();
 
         // If the player has lost all it's health and the death flag hasn't been set yet...
-        if (currentHealth <= 0 && !isDead)
-        {
+        //if (currentHealth <= 0 && !isDead)
+        //{
             // ... it should die.
-            Die();
-        }
+        //    Die();
+        //}
     }
 
     public void Die()
