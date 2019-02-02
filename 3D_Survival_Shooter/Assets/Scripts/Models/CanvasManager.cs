@@ -2,27 +2,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject playerDied;
     public GameObject levelCompleted;
     public GameObject gameCompleted;
     public GameObject gameOver;
-    public Text enemiesToKill;
-    public Text score;
+
+    private HUDManager hudManager;
+    private LevelTransition levelTransition;
 
     private static bool isPaused = false;
 
-    private void Awake()
-    {
-
-    }
-
     void Start()
     {
-        
+        pauseMenu.SetActive(false);
+        playerDied.SetActive(false);
+        levelCompleted.SetActive(false);
+        gameCompleted.SetActive(false);
+        gameOver.SetActive(false);
+
+        hudManager = FindObjectOfType<HUDManager>();
+        levelTransition = FindObjectOfType<LevelTransition>();
     }
 
     void Update()
@@ -30,7 +34,7 @@ public class CanvasManager : MonoBehaviour
         ShowPauseMenu();
     }
 
-    public void ShowPauseMenu()
+    private void ShowPauseMenu()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
@@ -45,13 +49,6 @@ public class CanvasManager : MonoBehaviour
         }
     }
 
-    private void Pause()
-    {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;    //stops the game
-        isPaused = true;
-    }
-
     public void Resume()
     {
         pauseMenu.SetActive(false);
@@ -59,38 +56,54 @@ public class CanvasManager : MonoBehaviour
         isPaused = false;
     }
 
-    public void ShowLevelCompletedMenu()
+    private void Pause()
     {
-        
-    }
-
-    public void ShowGameCompletedMenu()
-    {
-
-    }
-
-    public void ShowGameOverMenu()
-    {
-
-    }
-
-    public void NextLevel()
-    {
-
-    }
-
-    public void MainMenu()
-    {
-
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;    //stops the game
+        isPaused = true;
     }
 
     public void Restart()
     {
+        Time.timeScale = 1f;
+        hudManager.ResetEnemiesKilledCounter();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        hudManager.ResetEnemiesKilledCounter();
+        hudManager.ResetScoreCounter();
+        SceneManager.LoadScene(Scenes.FirstLevel);
+    }
+
+    public void NextLevel()
+    {
+        //ako je prvi level prijeđen, loadaj drugi level/scenu
+        if (levelTransition.GetFirstLevelPassed())
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(Scenes.SecondLevel);
+        }
+
+        //ako je drugi level prijeđen, loadaj treći level/scenu
+        else if (levelTransition.GetSecondLevelPassed())
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(Scenes.ThirdLevel);
+        }
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(Scenes.MainMenu);
     }
 
     public void Quit()
     {
-
+        Debug.Log("Exiting game...");
+        Application.Quit();
     }
 }

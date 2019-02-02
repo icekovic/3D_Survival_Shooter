@@ -7,7 +7,14 @@ public class BulletController : MonoBehaviour
 {
     public float speed;
 
-    private void Awake()
+    private HUDManager hudManager;
+
+    private void Start()
+    {
+        hudManager = FindObjectOfType<HUDManager>();
+    }
+
+    private void Update()
     {
 
     }
@@ -21,6 +28,8 @@ public class BulletController : MonoBehaviour
     {
         if(other.tag.Equals(Tags.Enemy))
         {
+            hudManager.IncrementEnemiesKilledCounter();
+            hudManager.IncreaseScoreCounter();
             Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
