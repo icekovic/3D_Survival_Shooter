@@ -42,7 +42,7 @@ public class HUDManager : MonoBehaviour
         scoreCounter = 0;
     }
 
-    public int GetEnemieKilledCounter()
+    public int GetEnemiesKilledCounter()
     {
         return enemiesKilledCounter;
     }

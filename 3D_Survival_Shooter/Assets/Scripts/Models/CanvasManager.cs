@@ -49,6 +49,30 @@ public class CanvasManager : MonoBehaviour
         }
     }
 
+    public void ShowLevelCompletedMenu()
+    {
+        Time.timeScale = 0f;    //stops the game
+        levelCompleted.SetActive(true);
+    }
+
+    public void ShowPlayerDiedMenu()
+    {
+        Time.timeScale = 0f;    //stops the game
+        playerDied.SetActive(true);
+    }
+
+    public void ShowGameCompletedMenu()
+    {
+        Time.timeScale = 0f;    //stops the game
+        gameCompleted.SetActive(true);
+    }
+
+    public void ShowGameOverMenu()
+    {
+        Time.timeScale = 0f;    //stops the game
+        gameOver.SetActive(true);
+    }
+
     public void Resume()
     {
         pauseMenu.SetActive(false);
