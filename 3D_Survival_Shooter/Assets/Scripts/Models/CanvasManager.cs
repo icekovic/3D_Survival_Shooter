@@ -11,6 +11,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject levelCompleted;
     public GameObject gameCompleted;
     public GameObject gameOver;
+    public GameObject hudManagerGameObject;
 
     private HUDManager hudManager;
     private LevelTransition levelTransition;
@@ -27,6 +28,9 @@ public class CanvasManager : MonoBehaviour
 
         hudManager = FindObjectOfType<HUDManager>();
         levelTransition = FindObjectOfType<LevelTransition>();
+
+        hudManager.ResetEnemiesKilledCounter();
+        hudManager.ResetScoreCounter();
     }
 
     void Update()
@@ -53,6 +57,7 @@ public class CanvasManager : MonoBehaviour
     {
         Time.timeScale = 0f;    //stops the game
         levelCompleted.SetActive(true);
+        hudManagerGameObject.SetActive(false);
     }
 
     public void ShowPlayerDiedMenu()
@@ -65,6 +70,7 @@ public class CanvasManager : MonoBehaviour
     {
         Time.timeScale = 0f;    //stops the game
         gameCompleted.SetActive(true);
+        hudManagerGameObject.SetActive(false);
     }
 
     public void ShowGameOverMenu()
