@@ -29,8 +29,8 @@ public class CanvasManager : MonoBehaviour
         hudManager = FindObjectOfType<HUDManager>();
         levelTransition = FindObjectOfType<LevelTransition>();
 
-        hudManager.ResetEnemiesKilledCounter();
-        hudManager.ResetScoreCounter();
+        //hudManager.ResetEnemiesKilledCounter();
+        //hudManager.ResetScoreCounter();
     }
 
     void Update()
@@ -97,6 +97,7 @@ public class CanvasManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         hudManager.ResetEnemiesKilledCounter();
+        hudManager.ResetScoreCounter();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

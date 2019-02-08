@@ -28,10 +28,19 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     public GunController gun;
 
+    private HUDManager hudManager;
+    private LevelTransition levelTransition;
+    private CanvasManager canvasManager;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
+
+        hudManager = FindObjectOfType<HUDManager>();
+        levelTransition = FindObjectOfType<LevelTransition>();
+        canvasManager = FindObjectOfType<CanvasManager>();
+
         //startingHealth = 100;
         //currentHealth = startingHealth;
         floorMask = LayerMask.GetMask("Floor");
@@ -55,6 +64,29 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         Move(horizontal, vertical);
         Turn();
         Animate(horizontal, vertical);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag.Equals(Tags.BlueJewel))
+        { 
+            levelTransition.FirstLevelIsPassed();
+            canvasManager.ShowLevelCompletedMenu();
+            Destroy(other.gameObject);
+        }
+
+        else if(other.tag.Equals(Tags.PinkJewel))
+        {           
+            levelTransition.SecondLevelIsPassed();
+            canvasManager.ShowLevelCompletedMenu();
+            Destroy(other.gameObject);
+        }
+
+        else if (other.tag.Equals(Tags.YellowJewel))
+        {
+            canvasManager.ShowGameCompletedMenu();
+            Destroy(other.gameObject);
+        }
     }
 
     public void Move(float horizontal, float vertical)

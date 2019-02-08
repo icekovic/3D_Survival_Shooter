@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
+    public int enemiesKilledCounter;
+    public int scoreCounter;
+
+    private LevelTransition levelTransition;
+
     void Start()
     {
-        
+        levelTransition = FindObjectOfType<LevelTransition>();
     }
 
     void Update()
@@ -17,6 +22,9 @@ public class LevelController : MonoBehaviour
 
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilledCounter);
+        PlayerPrefs.SetInt("Score", scoreCounter);
+
         SceneManager.LoadScene(Scenes.FirstLevel);
     }
 
@@ -24,17 +32,5 @@ public class LevelController : MonoBehaviour
     {
         Debug.Log("Quit game...");
         Application.Quit();
-    }
-
-    public void Nextlevel(string level)
-    {
-
-    }
-
-    public void Restartlevel()
-    {
-        Time.timeScale = 1f;
-        //collectiblesManager.ResetCoinsCount();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
