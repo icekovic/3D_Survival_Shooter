@@ -7,10 +7,15 @@ public class LevelTransition : MonoBehaviour
     private bool firstLevelPassed;
     private bool secondLevelPassed;
 
-    void Awake()
+    private void Awake()
     {
         firstLevelPassed = false;
         secondLevelPassed = false;
+    }
+
+    void Start()
+    {
+        
     }
 
     public bool GetFirstLevelPassed()

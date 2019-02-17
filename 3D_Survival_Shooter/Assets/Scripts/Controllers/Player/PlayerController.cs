@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
+public class PlayerController : MonoBehaviour, IPlayerMovement
 {
     public float speed = 6f;
     private Vector3 movement;
@@ -17,33 +17,20 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     bool isDead = false;
     bool damaged = false;
 
-    //public int startingHealth;
-    //public int currentHealth;
-    //public Slider healthSlider;
-
-    //shooting
-    //public int damagePerShot = 20;
-    //public float timeBetweenBullets = 0.15f;
-    //public float range = 100f;
-
     public GunController gun;
-
-    private HUDManager hudManager;
     private LevelTransition levelTransition;
-    private CanvasManager canvasManager;
+    private ScenesManager scenesManager;
+    private SoundManager soundManager;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
-
-        hudManager = FindObjectOfType<HUDManager>();
-        levelTransition = FindObjectOfType<LevelTransition>();
-        canvasManager = FindObjectOfType<CanvasManager>();
-
-        //startingHealth = 100;
-        //currentHealth = startingHealth;
         floorMask = LayerMask.GetMask("Floor");
+
+        levelTransition = FindObjectOfType<LevelTransition>();
+        scenesManager = FindObjectOfType<ScenesManager>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     void Start()
@@ -69,24 +56,52 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag.Equals(Tags.BlueJewel))
-        { 
+        {            
             levelTransition.FirstLevelIsPassed();
-            canvasManager.ShowLevelCompletedMenu();
-            Destroy(other.gameObject);
+            PlayerCollectedBlueJewel(other);
         }
 
         else if(other.tag.Equals(Tags.PinkJewel))
-        {           
+        {
             levelTransition.SecondLevelIsPassed();
-            canvasManager.ShowLevelCompletedMenu();
-            Destroy(other.gameObject);
+            PlayerCollectedPinkJewel(other);
         }
 
         else if (other.tag.Equals(Tags.YellowJewel))
         {
-            canvasManager.ShowGameCompletedMenu();
-            Destroy(other.gameObject);
+            PlayerCollectedYellowJewel(other);
         }
+    }
+
+    private void PlayerCollectedYellowJewel(Collider other)
+    {
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayGameCompletedSound();
+        scenesManager.ShowGameCompletedMenu();
+        Destroy(other);
+    }
+
+    private void PlayerCollectedPinkJewel(Collider other)
+    {
+        //soundManager.StopBackgroundMusic();
+        //soundManager.PlayLevelCompletedSound();
+        //levelCompleted.GetLevelCompletedCanvas().SetActive(true);
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayLevelCompletedSound();
+        scenesManager.ShowLevelCompletedMenu();
+        Destroy(other.gameObject);
+    }
+
+    private void PlayerCollectedBlueJewel(Collider other)
+    {
+        //soundManager.StopBackgroundMusic();
+        //soundManager.PlayLevelCompletedSound();
+        //levelCompleted.GetLevelCompletedCanvas().SetActive(true);
+
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayLevelCompletedSound();
+        scenesManager.ShowLevelCompletedMenu();
+        Destroy(other.gameObject);
     }
 
     public void Move(float horizontal, float vertical)
@@ -128,48 +143,6 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         }
 
         animator.SetBool("IsWalking", isWalking);
-    }
-
-    public void TakeDamage(int amount)
-    {
-        damaged = true;
-
-        // Reduce the current health by the damage amount.
-        //currentHealth -= amount;
-
-        // Set the health bar's value to the current health.
-        //healthSlider.value = currentHealth;
-
-        // Play the hurt sound effect.
-        //playerAudio.Play();
-
-        // If the player has lost all it's health and the death flag hasn't been set yet...
-        //if (currentHealth <= 0 && !isDead)
-        //{
-            // ... it should die.
-        //    Die();
-        //}
-    }
-
-    public void Die()
-    {
-        isDead = true;
-
-        // Turn off any remaining shooting effects.
-        //playerShooting.DisableEffects();
-
-        // Tell the animator that the player is dead.
-        animator.SetTrigger("Die");
-
-        // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
-        //playerAudio.clip = deathClip;
-        //playerAudio.Play();
-
-        // Turn off the movement and shooting scripts.
-        //playerMovement.enabled = false;
-        //playerShooting.enabled = false;
-
-        Debug.Log("Died");
     }
 
     private void Shoot()

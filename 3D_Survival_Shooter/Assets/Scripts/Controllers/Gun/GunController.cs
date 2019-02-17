@@ -12,6 +12,13 @@ public class GunController : MonoBehaviour
     private float shotsCounter;
     public Transform firePoint;
 
+    private SoundManager soundManager;
+
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+
     void Start()
     {
 
@@ -25,8 +32,8 @@ public class GunController : MonoBehaviour
             if (shotsCounter <= 0)
             {
                 shotsCounter = timeBetweenShots;
+                soundManager.PlayGunshotSound();
                 BulletController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as BulletController;
-                SoundManager.instance.PlayGunshotSound();
                 newBullet.speed = bulletSpeed;
             }
         }

@@ -1,111 +1,45 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioClip hellephantHurtSound;
-    private AudioSource hellephantHurtAudioSource { get { return GetComponent<AudioSource>(); } }
+    [SerializeField]
+    private AudioClip backgroundMusic;
+    private AudioSource backgroundMusicAudioSource { get { return GetComponent<AudioSource>(); } }
 
-    public AudioClip hellephantDeathSound;
-    private AudioSource hellephantDeathAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip zombearHurtSound;
-    private AudioSource zombearHurtAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip zombearDeathSound;
-    private AudioSource zombearDeathAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip zombunnyHurtSound;
-    private AudioSource zombunnyHurtAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip zombunnyDeathSound;
-    private AudioSource zombunnyDeathAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip playerHurtSound;
-    private AudioSource playerHurtAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip gunshotSound;
-    private AudioSource gunshotAudioSource { get { return GetComponent<AudioSource>(); } }
-
-    public AudioClip levelCompletedSound;
+    [SerializeField]
+    private AudioClip levelCompleted;
     private AudioSource levelCompletedAudioSource { get { return GetComponent<AudioSource>(); } }
 
-    public AudioClip gameCompletedSound;
+    [SerializeField]
+    private AudioClip gameCompleted;
     private AudioSource gameCompletedAudioSource { get { return GetComponent<AudioSource>(); } }
 
-    public AudioClip gameOverSound;
+    [SerializeField]
+    private AudioClip gameOver;
     private AudioSource gameOverAudioSource { get { return GetComponent<AudioSource>(); } }
 
-    public static SoundManager instance = null;
+    [SerializeField]
+    private AudioClip gunshotSound;
+    private AudioSource gunshotAudioSource { get { return GetComponent<AudioSource>(); } }
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-
         gameObject.AddComponent<AudioSource>();
     }
 
     void Start()
     {
-        
+         gameObject.AddComponent<AudioSource>();
+
+        PlayBackgroundMusic();
     }
 
     void Update()
     {
-        
-    }
 
-    public void PlayHellephantHurtSound()
-    {
-        hellephantHurtAudioSource.clip = hellephantHurtSound;
-        hellephantHurtAudioSource.PlayOneShot(hellephantHurtSound);
-    }
-
-    public void PlayHellephantDeathSound()
-    {
-        hellephantDeathAudioSource.clip = hellephantDeathSound;
-        hellephantDeathAudioSource.PlayOneShot(hellephantDeathSound);
-    }
-
-    public void PlayZombearHurtSound()
-    {
-        zombearHurtAudioSource.clip = zombearHurtSound;
-        zombearHurtAudioSource.PlayOneShot(zombearHurtSound);
-    }
-
-    public void PlayZombearDeathSound()
-    {
-        zombearDeathAudioSource.clip = zombearDeathSound;
-        zombearDeathAudioSource.PlayOneShot(zombearDeathSound);
-    }
-
-    public void PlayZombunnyHurtSound()
-    {
-        zombunnyHurtAudioSource.clip = zombunnyHurtSound;
-        zombunnyHurtAudioSource.PlayOneShot(zombunnyHurtSound);
-    }
-
-    public void PlayZombunnyDeathSound()
-    {
-        zombunnyDeathAudioSource.clip = zombunnyDeathSound;
-        zombunnyDeathAudioSource.PlayOneShot(zombunnyDeathSound);
-    }
-
-    public void PlayPlayerHurtSound()
-    {
-        playerHurtAudioSource.clip = playerHurtSound;
-        playerHurtAudioSource.PlayOneShot(playerHurtSound);
     }
 
     public void PlayGunshotSound()
@@ -114,21 +48,32 @@ public class SoundManager : MonoBehaviour
         gunshotAudioSource.PlayOneShot(gunshotSound);
     }
 
+    public void PlayBackgroundMusic()
+    {
+        backgroundMusicAudioSource.clip = backgroundMusic;
+        backgroundMusicAudioSource.PlayOneShot(backgroundMusic);
+    }
+
+    public void StopBackgroundMusic()
+    {
+        backgroundMusicAudioSource.Stop();
+    }
+
     public void PlayLevelCompletedSound()
     {
-        levelCompletedAudioSource.clip = levelCompletedSound;
-        levelCompletedAudioSource.PlayOneShot(levelCompletedSound);
+        levelCompletedAudioSource.clip = levelCompleted;
+        levelCompletedAudioSource.PlayOneShot(levelCompleted);
     }
 
     public void PlayGameCompletedSound()
     {
-        gameCompletedAudioSource.clip = gameCompletedSound;
-        gameCompletedAudioSource.PlayOneShot(gameCompletedSound);
+        gameCompletedAudioSource.clip = gameCompleted;
+        gameCompletedAudioSource.PlayOneShot(gameCompleted);
     }
 
     public void PlayGameOverSound()
     {
-        gameOverAudioSource.clip = gameOverSound;
-        gameOverAudioSource.PlayOneShot(gameOverSound);
+        gameOverAudioSource.clip = gameOver;
+        gameOverAudioSource.PlayOneShot(gameOver);
     }
 }
