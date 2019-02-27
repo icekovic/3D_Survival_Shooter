@@ -77,29 +77,25 @@ public class PlayerController : MonoBehaviour, IPlayerMovement
     {
         soundManager.StopBackgroundMusic();
         soundManager.PlayGameCompletedSound();
+        scenesManager.CloseHud();
         scenesManager.ShowGameCompletedMenu();
         Destroy(other);
     }
 
     private void PlayerCollectedPinkJewel(Collider other)
     {
-        //soundManager.StopBackgroundMusic();
-        //soundManager.PlayLevelCompletedSound();
-        //levelCompleted.GetLevelCompletedCanvas().SetActive(true);
         soundManager.StopBackgroundMusic();
         soundManager.PlayLevelCompletedSound();
+        scenesManager.CloseHud();
         scenesManager.ShowLevelCompletedMenu();
         Destroy(other.gameObject);
     }
 
     private void PlayerCollectedBlueJewel(Collider other)
     {
-        //soundManager.StopBackgroundMusic();
-        //soundManager.PlayLevelCompletedSound();
-        //levelCompleted.GetLevelCompletedCanvas().SetActive(true);
-
         soundManager.StopBackgroundMusic();
         soundManager.PlayLevelCompletedSound();
+        scenesManager.CloseHud();
         scenesManager.ShowLevelCompletedMenu();
         Destroy(other.gameObject);
     }

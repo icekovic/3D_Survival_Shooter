@@ -23,6 +23,9 @@ public class ScenesManager : MonoBehaviour
     [SerializeField]
     private GameObject gameOverMenu;
 
+    [SerializeField]
+    private GameObject hud;
+
     private LevelTransition levelTransition;
 
     private void Awake()
@@ -140,5 +143,10 @@ public class ScenesManager : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;    //paused game state
         pauseMenu.SetActive(true);
+    }
+
+    public void CloseHud()
+    {
+        hud.SetActive(false);
     }
 }
