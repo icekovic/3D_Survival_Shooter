@@ -1,122 +1,122 @@
 {
   "items": [
     {
-      "key": "GameName",
+      "key": "GameNameIrish",
       "value": "SHOOTER MARTHANAIS"
     },
 
     {
-      "key": "SelectLanguage",
+      "key": "SelectLanguageIrish",
       "value": "TÉANAMH SEACHT"
     },
 
     {
-      "key": "Play",
+      "key": "PlayIrish",
       "value": "IMIRT CLUICHE"
     },
 
     {
-      "key": "Options",
+      "key": "OptionsIrish",
       "value": "SOCRUITHE"
     },
 
     {
-      "key": "Sound",
+      "key": "SoundIrish",
       "value": "FUAIME"
     },
 
     {
-      "key": "VideoQuality",
+      "key": "VideoQualityIrish",
       "value": "cáilíocht físeáin"
     },
 
     {
-      "key": "Resolution",
+      "key": "ResolutionIrish",
       "value": "réiteach"
     },
 
     {
-      "key": "Back",
+      "key": "BackIrish",
       "value": "DUL AR AIS"
     },
 
     {
-      "key": "Quit",
-      "value": "CLUICHE SCOIR"
+      "key": "QuitIrish",
+      "value": "CLUICHE SCOIRIrish"
     },
 
     {
-      "key": "EnemiesKilled",
+      "key": "EnemiesKilledIrish",
       "value": "naimhde a maraíodh: "
     },
 
     {
-      "key": "Score",
+      "key": "ScoreIrish",
       "value": "scór: "
     },
 
     {
-      "key": "Level1",
+      "key": "Level1Irish",
       "value": "leibhéal 1"
     },
 
     {
-      "key": "Level2",
+      "key": "Level2Irish",
       "value": "leibhéal 2"
     },
 
     {
-      "key": "Level3",
+      "key": "Level3Irish",
       "value": "leibhéal 3"
     },
 
     {
-      "key": "GameIsPaused",
+      "key": "GameIsPausedIrish",
       "value": "LUICHE SOS"
     },
 
     {
-      "key": "Resume",
+      "key": "ResumeIrish",
       "value": "cluiche atosú"
     },
 
     {
-      "key": "Restart",
+      "key": "RestartIrish",
       "value": "leibhéal atosú"
     },
 
     {
-      "key": "MainMenu",
+      "key": "MainMenuIrish",
       "value": "príomhroghchlár"
     },
 
     {
-      "key": "PlayerDied",
+      "key": "PlayerDiedIrish",
       "value": "d'éag tú!"
     },
 
     {
-      "key": "LevelCompleted",
+      "key": "LevelCompletedIrish",
       "value": "tá an leibhéal críochnaithe agat!"
     },
 
     {
-      "key": "NextLevel",
+      "key": "NextLevelIrish",
       "value": "an chéad leibhéal eile"
     },
 
     {
-      "key": "GameCompleted",
+      "key": "GameCompletedIrish",
       "value": "comhghairdeas! tá tú tar éis an cluiche a rith!"
     },
 
     {
-      "key": "RestartGame",
+      "key": "RestartGameIrish",
       "value": "cluiche atosú"
     },
 
     {
-      "key": "GameOver",
+      "key": "GameOverIrish",
       "value": "cluiche críochnaithe! chaill tu!"
     }
   ]
