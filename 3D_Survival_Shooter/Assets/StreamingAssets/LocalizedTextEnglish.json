@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "key": "GameName",
+      "value": "SURVIVAL SHOOTER"
+    },
+
+    {
+      "key": "SelectLanguage",
+      "value": "SELECT LANGUAGE"
+    },
+
+    {
+      "key": "Play",
+      "value": "PLAY"
+    },
+
+    {
+      "key": "Options",
+      "value": "OPTIONS"
+    },
+
+    {
+      "key": "Sound",
+      "value": "SOUND"
+    },
+
+    {
+      "key": "VideoQuality",
+      "value": "VIDEO QUALITY"
+    },
+
+    {
+      "key": "Resolution",
+      "value": "RESOLUTION"
+    },
+
+    {
+      "key": "Back",
+      "value": "BACK"
+    },
+
+    {
+      "key": "Quit",
+      "value": "QUIT"
+    },
+
+    {
+      "key": "EnemiesKilled",
+      "value": "ENEMIES KILLED: "
+    },
+
+    {
+      "key": "Score",
+      "value": "SCORE: "
+    },
+
+    {
+      "key": "Level1",
+      "value": "LEVEL 1"
+    },
+
+    {
+      "key": "Level2",
+      "value": "LEVEL 2"
+    },
+
+    {
+      "key": "Level3",
+      "value": "LEVEL 3"
+    },
+
+    {
+      "key": "GameIsPaused",
+      "value": "GAME IS PAUSED"
+    },
+
+    {
+      "key": "Resume",
+      "value": "RESUME"
+    },
+
+    {
+      "key": "Restart",
+      "value": "RESTART"
+    },
+
+    {
+      "key": "MainMenu",
+      "value": "MAIN MENU"
+    },
+
+    {
+      "key": "PlayerDied",
+      "value": "YOU DIED!"
+    },
+
+    {
+      "key": "LevelCompleted",
+      "value": "YOU'VE COMPLETED THE LEVEL!"
+    },
+
+    {
+      "key": "NextLevel",
+      "value": "NEXT LEVEL"
+    },
+
+    {
+      "key": "GameCompleted",
+      "value": "CONGRATULATIONS! YOU'VE PASSED THE GAME!"
+    },
+
+    {
+      "key": "RestartGame",
+      "value": "RESTART GAME"
+    },
+
+    {
+      "key": "GameOver",
+      "value": "GAME OVER! YOU LOST!"
+    }
+  ]
+}

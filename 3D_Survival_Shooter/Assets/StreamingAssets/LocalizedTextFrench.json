@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "key": "GameName",
+      "value": "TIREUR DE SURVIE"
+    },
+
+    {
+      "key": "SelectLanguage",
+      "value": "CHOISIR LA LANGUE"
+    },
+
+    {
+      "key": "Play",
+      "value": "JOUER"
+    },
+
+    {
+      "key": "Options",
+      "value": "RÉGLAGES"
+    },
+
+    {
+      "key": "Sound",
+      "value": "DU SON"
+    },
+
+    {
+      "key": "VideoQuality",
+      "value": "QUALITÉ VIDÉO"
+    },
+
+    {
+      "key": "Resolution",
+      "value": "RÉSOLUTION"
+    },
+
+    {
+      "key": "Back",
+      "value": "RETOURNER"
+    },
+
+    {
+      "key": "Quit",
+      "value": "QUITTER"
+    },
+
+    {
+      "key": "EnemiesKilled",
+      "value": "ENNEMIS TUÉS: "
+    },
+
+    {
+      "key": "Score",
+      "value": "LE SCORE: "
+    },
+
+    {
+      "key": "Level1",
+      "value": "NIVEAU 1"
+    },
+
+    {
+      "key": "Level2",
+      "value": "NIVEAU 2"
+    },
+
+    {
+      "key": "Level3",
+      "value": "NIVEAU 3"
+    },
+
+    {
+      "key": "GameIsPaused",
+      "value": "JEU EST PASSÉ"
+    },
+
+    {
+      "key": "Resume",
+      "value": "REPRENDRE"
+    },
+
+    {
+      "key": "Restart",
+      "value": "RECOMMENCER"
+    },
+
+    {
+      "key": "MainMenu",
+      "value": "MENU PRINCIPAL"
+    },
+
+    {
+      "key": "PlayerDied",
+      "value": "TU ES MORT!"
+    },
+
+    {
+      "key": "LevelCompleted",
+      "value": "VOUS AVEZ COMPLÉTÉ LE NIVEAU!"
+    },
+
+    {
+      "key": "NextLevel",
+      "value": "NIVEAU SUIVANT"
+    },
+
+    {
+      "key": "GameCompleted",
+      "value": "TOUTES NOS FÉLICITATIONS! VOUS AVEZ PASSÉ LE JEU!"
+    },
+
+    {
+      "key": "RestartGame",
+      "value": "RECOMMENCER LE JEU"
+    },
+
+    {
+      "key": "GameOver",
+      "value": "JEU TERMINÉ! TU AS PERDU!"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "key": "GameName",
+      "value": "SHOOTER MARTHANAIS"
+    },
+
+    {
+      "key": "SelectLanguage",
+      "value": "TÉANAMH SEACHT"
+    },
+
+    {
+      "key": "Play",
+      "value": "IMIRT CLUICHE"
+    },
+
+    {
+      "key": "Options",
+      "value": "SOCRUITHE"
+    },
+
+    {
+      "key": "Sound",
+      "value": "FUAIME"
+    },
+
+    {
+      "key": "VideoQuality",
+      "value": "cáilíocht físeáin"
+    },
+
+    {
+      "key": "Resolution",
+      "value": "réiteach"
+    },
+
+    {
+      "key": "Back",
+      "value": "DUL AR AIS"
+    },
+
+    {
+      "key": "Quit",
+      "value": "CLUICHE SCOIR"
+    },
+
+    {
+      "key": "EnemiesKilled",
+      "value": "naimhde a maraíodh: "
+    },
+
+    {
+      "key": "Score",
+      "value": "scór: "
+    },
+
+    {
+      "key": "Level1",
+      "value": "leibhéal 1"
+    },
+
+    {
+      "key": "Level2",
+      "value": "leibhéal 2"
+    },
+
+    {
+      "key": "Level3",
+      "value": "leibhéal 3"
+    },
+
+    {
+      "key": "GameIsPaused",
+      "value": "LUICHE SOS"
+    },
+
+    {
+      "key": "Resume",
+      "value": "cluiche atosú"
+    },
+
+    {
+      "key": "Restart",
+      "value": "leibhéal atosú"
+    },
+
+    {
+      "key": "MainMenu",
+      "value": "príomhroghchlár"
+    },
+
+    {
+      "key": "PlayerDied",
+      "value": "d'éag tú!"
+    },
+
+    {
+      "key": "LevelCompleted",
+      "value": "tá an leibhéal críochnaithe agat!"
+    },
+
+    {
+      "key": "NextLevel",
+      "value": "an chéad leibhéal eile"
+    },
+
+    {
+      "key": "GameCompleted",
+      "value": "comhghairdeas! tá tú tar éis an cluiche a rith!"
+    },
+
+    {
+      "key": "RestartGame",
+      "value": "cluiche atosú"
+    },
+
+    {
+      "key": "GameOver",
+      "value": "cluiche críochnaithe! chaill tu!"
+    }
+  ]
+}
