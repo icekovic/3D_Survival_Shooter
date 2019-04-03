@@ -1,122 +1,122 @@
 {
   "items": [
     {
-      "key": "GameNameFrench",
+      "key": "GameName",
       "value": "TIREUR DE SURVIE"
     },
 
     {
-      "key": "SelectLanguageFrench",
+      "key": "SelectLanguage",
       "value": "CHOISIR LA LANGUE"
     },
 
     {
-      "key": "PlayFrench",
+      "key": "Play",
       "value": "JOUER"
     },
 
     {
-      "key": "OptionsFrench",
+      "key": "Options",
       "value": "RÉGLAGES"
     },
 
     {
-      "key": "SoundFrench",
+      "key": "Sound",
       "value": "DU SON"
     },
 
     {
-      "key": "VideoQualityFrench",
+      "key": "VideoQuality",
       "value": "QUALITÉ VIDÉO"
     },
 
     {
-      "key": "ResolutionFrench",
+      "key": "Resolution",
       "value": "RÉSOLUTION"
     },
 
     {
-      "key": "BackFrench",
+      "key": "Back",
       "value": "RETOURNER"
     },
 
     {
-      "key": "QuitFrench",
+      "key": "Quit",
       "value": "QUITTER"
     },
 
     {
-      "key": "EnemiesKilledFrench",
+      "key": "EnemiesKilled",
       "value": "ENNEMIS TUÉS: "
     },
 
     {
-      "key": "ScoreFrench",
+      "key": "Score",
       "value": "LE SCORE: "
     },
 
     {
-      "key": "Level1French",
+      "key": "Level1",
       "value": "NIVEAU 1"
     },
 
     {
-      "key": "Level2French",
+      "key": "Level2",
       "value": "NIVEAU 2"
     },
 
     {
-      "key": "Level3French",
+      "key": "Level3",
       "value": "NIVEAU 3"
     },
 
     {
-      "key": "GameIsPausedFrench",
+      "key": "GameIsPaused",
       "value": "JEU EST PASSÉ"
     },
 
     {
-      "key": "ResumeFrench",
+      "key": "Resume",
       "value": "REPRENDRE"
     },
 
     {
-      "key": "RestartFrench",
+      "key": "RestartLevel",
       "value": "RECOMMENCER"
     },
 
     {
-      "key": "MainMenuFrench",
+      "key": "MainMenu",
       "value": "MENU PRINCIPAL"
     },
 
     {
-      "key": "PlayerDiedFrench",
+      "key": "PlayerDied",
       "value": "TU ES MORT!"
     },
 
     {
-      "key": "LevelCompletedFrench",
+      "key": "LevelCompleted",
       "value": "VOUS AVEZ COMPLÉTÉ LE NIVEAU!"
     },
 
     {
-      "key": "NextLevelFrench",
+      "key": "NextLevel",
       "value": "NIVEAU SUIVANT"
     },
 
     {
-      "key": "GameCompletedFrench",
+      "key": "GameCompleted",
       "value": "TOUTES NOS FÉLICITATIONS! VOUS AVEZ PASSÉ LE JEU!"
     },
 
     {
-      "key": "RestartGameFrench",
+      "key": "RestartGame",
       "value": "RECOMMENCER LE JEU"
     },
 
     {
-      "key": "GameOverFrench",
+      "key": "GameOver",
       "value": "JEU TERMINÉ! TU AS PERDU!"
     }
   ]

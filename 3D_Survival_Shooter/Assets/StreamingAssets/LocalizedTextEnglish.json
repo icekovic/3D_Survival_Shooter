@@ -1,122 +1,122 @@
 {
   "items": [
     {
-      "key": "GameNameEnglish",
+      "key": "GameName",
       "value": "SURVIVAL SHOOTER"
     },
 
     {
-      "key": "SelectLanguageEnglish",
+      "key": "SelectLanguage",
       "value": "SELECT LANGUAGE"
     },
 
     {
-      "key": "PlayEnglish",
+      "key": "Play",
       "value": "PLAY"
     },
 
     {
-      "key": "OptionsEnglish",
+      "key": "Options",
       "value": "OPTIONS"
     },
 
     {
-      "key": "SoundEnglish",
+      "key": "Sound",
       "value": "SOUND"
     },
 
     {
-      "key": "VideoQualityEnglish",
-      "value": "VIDEO QUALITYEnglish"
+      "key": "VideoQuality",
+      "value": "VIDEO QUALITY"
     },
 
     {
-      "key": "ResolutionEnglish",
+      "key": "Resolution",
       "value": "RESOLUTION"
     },
 
     {
-      "key": "BackEnglish",
+      "key": "Back",
       "value": "BACK"
     },
 
     {
-      "key": "QuitEnglish",
+      "key": "Quit",
       "value": "QUIT"
     },
 
     {
-      "key": "EnemiesKilledEnglish",
+      "key": "EnemiesKilled",
       "value": "ENEMIES KILLED: "
     },
 
     {
-      "key": "ScoreEnglish",
+      "key": "Score",
       "value": "SCORE: "
     },
 
     {
-      "key": "Level1English",
+      "key": "Level1",
       "value": "LEVEL 1"
     },
 
     {
-      "key": "Level2English",
+      "key": "Level2",
       "value": "LEVEL 2"
     },
 
     {
-      "key": "Level3English",
+      "key": "Level3",
       "value": "LEVEL 3"
     },
 
     {
-      "key": "GameIsPausedEnglish",
+      "key": "GameIsPaused",
       "value": "GAME IS PAUSED"
     },
 
     {
-      "key": "ResumeEnglish",
+      "key": "Resume",
       "value": "RESUME"
     },
 
     {
-      "key": "RestartEnglish",
+      "key": "RestartLevel",
       "value": "RESTART"
     },
 
     {
-      "key": "MainMenuEnglish",
+      "key": "MainMenu",
       "value": "MAIN MENU"
     },
 
     {
-      "key": "PlayerDiedEnglish",
+      "key": "PlayerDied",
       "value": "YOU DIED!"
     },
 
     {
-      "key": "LevelCompletedEnglish",
+      "key": "LevelCompleted",
       "value": "YOU'VE COMPLETED THE LEVEL!"
     },
 
     {
-      "key": "NextLevelEnglish",
+      "key": "NextLevel",
       "value": "NEXT LEVEL"
     },
 
     {
-      "key": "GameCompletedEnglish",
+      "key": "GameCompleted",
       "value": "CONGRATULATIONS! YOU'VE PASSED THE GAME!"
     },
 
     {
-      "key": "RestartGameEnglish",
+      "key": "RestartGame",
       "value": "RESTART GAME"
     },
 
     {
-      "key": "GameOverEnglish",
+      "key": "GameOver",
       "value": "GAME OVER! YOU LOST!"
     }
   ]

@@ -9,6 +9,7 @@ public class LocalizationManager : MonoBehaviour
     public static LocalizationManager instance;
     private bool isReady = false;
     private Dictionary<string, string> localizedText;
+    private string missingTextString = "Localized text not found";
 
     private void Awake()
     {
@@ -60,6 +61,18 @@ public class LocalizationManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public string GetLocalizedValue(string key)
+    {
+        string result = missingTextString;
+
+        if(localizedText.ContainsKey(key))
+        {
+            result = localizedText[key];
+        }
+
+        return result;
     }
 
     public bool GetIsReady()
