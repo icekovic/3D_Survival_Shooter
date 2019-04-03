@@ -27,12 +27,12 @@
 
     {
       "key": "VideoQualityIrish",
-      "value": "cáilíocht físeáin"
+      "value": "Cáilíocht físeáin"
     },
 
     {
       "key": "ResolutionIrish",
-      "value": "réiteach"
+      "value": "Réiteach"
     },
 
     {
@@ -47,22 +47,22 @@
 
     {
       "key": "EnemiesKilledIrish",
-      "value": "naimhde a maraíodh: "
+      "value": "Naimhde a maraíodh: "
     },
 
     {
       "key": "ScoreIrish",
-      "value": "scór: "
+      "value": "Scór: "
     },
 
     {
       "key": "Level1Irish",
-      "value": "leibhéal 1"
+      "value": "Leibhéal 1"
     },
 
     {
       "key": "Level2Irish",
-      "value": "leibhéal 2"
+      "value": "Leibhéal 2"
     },
 
     {
@@ -77,47 +77,47 @@
 
     {
       "key": "ResumeIrish",
-      "value": "cluiche atosú"
+      "value": "Cluiche atosú"
     },
 
     {
       "key": "RestartIrish",
-      "value": "leibhéal atosú"
+      "value": "Leibhéal atosú"
     },
 
     {
       "key": "MainMenuIrish",
-      "value": "príomhroghchlár"
+      "value": "Príomhroghchlár"
     },
 
     {
       "key": "PlayerDiedIrish",
-      "value": "d'éag tú!"
+      "value": "D'éag tú!"
     },
 
     {
       "key": "LevelCompletedIrish",
-      "value": "tá an leibhéal críochnaithe agat!"
+      "value": "Dá an leibhéal críochnaithe agat!"
     },
 
     {
       "key": "NextLevelIrish",
-      "value": "an chéad leibhéal eile"
+      "value": "An chéad leibhéal eile"
     },
 
     {
       "key": "GameCompletedIrish",
-      "value": "comhghairdeas! tá tú tar éis an cluiche a rith!"
+      "value": "Comhghairdeas! tá tú tar éis an cluiche a rith!"
     },
 
     {
       "key": "RestartGameIrish",
-      "value": "cluiche atosú"
+      "value": "Cluiche atosú"
     },
 
     {
       "key": "GameOverIrish",
-      "value": "cluiche críochnaithe! chaill tu!"
+      "value": "Cluiche críochnaithe! chaill tu!"
     }
   ]
 }
