@@ -51,7 +51,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
+    m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 10
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 10d9eed8abcbbfb4ea5fad852e873182, type: 2}
 --- !u!1001 &26515012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mushrooms (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
@@ -778,6 +783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4378515433244934060, guid: 42868ff867c6e6c47bbc3b0134af51ec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2365580279591462165, guid: 42868ff867c6e6c47bbc3b0134af51ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1240,6 +1250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poplar_Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1314,6 +1329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canoe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743366491180391631, guid: 7cefed3cc53e2ce4f8d6f9855424d1d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9139011705362335301, guid: 7cefed3cc53e2ce4f8d6f9855424d1d9,
         type: 3}
@@ -1553,6 +1573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oak_Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4378515433244934060, guid: 42868ff867c6e6c47bbc3b0134af51ec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2365580279591462165, guid: 42868ff867c6e6c47bbc3b0134af51ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1627,6 +1652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288317090965800369, guid: 21dcea148eb14a94b88b6fa9237d76c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5362353411726345783, guid: 21dcea148eb14a94b88b6fa9237d76c2,
         type: 3}
@@ -2100,6 +2130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2189,6 +2224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tent (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288317090965800369, guid: 21dcea148eb14a94b88b6fa9237d76c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5362353411726345783, guid: 21dcea148eb14a94b88b6fa9237d76c2,
         type: 3}
@@ -2537,6 +2577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Logs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309312897133645217, guid: f3986b79891a62440b4798542ac02aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8455034539939141331, guid: f3986b79891a62440b4798542ac02aa1,
         type: 3}
@@ -3035,6 +3080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poplar_Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3231,6 +3281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288317090965800369, guid: 21dcea148eb14a94b88b6fa9237d76c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5362353411726345783, guid: 21dcea148eb14a94b88b6fa9237d76c2,
         type: 3}
@@ -3780,7 +3835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &1006108268
 MeshCollider:
@@ -4034,6 +4089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mushrooms (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
@@ -5091,6 +5151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5180,6 +5245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Poplar_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}
@@ -5365,6 +5435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5455,6 +5530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge
       objectReference: {fileID: 0}
+    - target: {fileID: 6228008205972831947, guid: 86b9df83bd6672347a5055f1c8a4416c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 902091658673104420, guid: 86b9df83bd6672347a5055f1c8a4416c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5544,6 +5624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fir_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701276859351280250, guid: 353eee0801124e549a031ecb22c6625e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8475394284796020483, guid: 353eee0801124e549a031ecb22c6625e,
         type: 3}
@@ -6007,6 +6092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Logs
       objectReference: {fileID: 0}
+    - target: {fileID: 3309312897133645217, guid: f3986b79891a62440b4798542ac02aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8455034539939141331, guid: f3986b79891a62440b4798542ac02aa1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6097,6 +6187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8701276859351280250, guid: 353eee0801124e549a031ecb22c6625e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8475394284796020483, guid: 353eee0801124e549a031ecb22c6625e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6171,6 +6266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Logs (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309312897133645217, guid: f3986b79891a62440b4798542ac02aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8455034539939141331, guid: f3986b79891a62440b4798542ac02aa1,
         type: 3}
@@ -6371,6 +6471,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fir_Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8701276859351280250, guid: 353eee0801124e549a031ecb22c6625e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8475394284796020483, guid: 353eee0801124e549a031ecb22c6625e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6445,6 +6550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mushrooms
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472064654845651790, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5474351285252493396, guid: 8462cec7c75adf44d9d6ba1b9012d75f,
         type: 3}
@@ -6535,6 +6645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tent (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288317090965800369, guid: 21dcea148eb14a94b88b6fa9237d76c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5362353411726345783, guid: 21dcea148eb14a94b88b6fa9237d76c2,
         type: 3}
@@ -6754,6 +6869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Oak_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378515433244934060, guid: 42868ff867c6e6c47bbc3b0134af51ec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2365580279591462165, guid: 42868ff867c6e6c47bbc3b0134af51ec,
         type: 3}
@@ -7084,6 +7204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poplar_Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7311,6 +7436,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poplar_Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7385,6 +7515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 549164932356989904, guid: 693b6baf300d1ec48a68077733460fb1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8787024406930543133, guid: 693b6baf300d1ec48a68077733460fb1,
         type: 3}
@@ -7767,6 +7902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tent (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288317090965800369, guid: 21dcea148eb14a94b88b6fa9237d76c2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5362353411726345783, guid: 21dcea148eb14a94b88b6fa9237d76c2,
         type: 3}
@@ -8599,6 +8739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Poplar_Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830682457885891985, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4507181809565312660, guid: 6afe1d9e9e0d18746ae138d07e7aca04,
         type: 3}

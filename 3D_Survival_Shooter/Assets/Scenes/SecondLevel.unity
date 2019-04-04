@@ -51,7 +51,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
+    m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 10
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 05612ff0f9f72d243a947a6160af161d, type: 2}
 --- !u!1 &944773
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave
       objectReference: {fileID: 0}
+    - target: {fileID: 9105031816721817859, guid: 6c602a35207306c4986c3a5dabe76517,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8578155287034254169, guid: 6c602a35207306c4986c3a5dabe76517,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -474,6 +479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chalice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314006721156704553, guid: 7cb3931109918f240ab969770e5f0eeb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8708994753399389052, guid: 7cb3931109918f240ab969770e5f0eeb,
         type: 3}
@@ -674,6 +684,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coffin
       objectReference: {fileID: 0}
+    - target: {fileID: 5220787291734788221, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3515703677036808966, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -743,6 +758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4295499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413703593182967229, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c15e6b1aeebc3c46b750d6bce8377bf, type: 3}
@@ -1041,6 +1061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8611115854100416271, guid: 0ec7928b02434fd42a17934e5e9ecd0e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6648605522423984990, guid: 0ec7928b02434fd42a17934e5e9ecd0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,6 +1224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gravestone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658631276127282431, guid: 5f83bb62fcfe8894989a41d09f456de6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2449584512258102345, guid: 5f83bb62fcfe8894989a41d09f456de6,
         type: 3}
@@ -1404,6 +1434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GravestoneCross (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4363966183161547810, guid: d5ec92309b49e7345b3a27cf3ac9e8f4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5870111743715448136, guid: d5ec92309b49e7345b3a27cf3ac9e8f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1521,6 +1556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468683554839094742, guid: eae85fa872015c94cb2af431273bf2e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1706281368688257223, guid: eae85fa872015c94cb2af431273bf2e0,
         type: 3}
@@ -1972,6 +2012,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cross (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1771511990243398627, guid: e9b1cc05dc2135244b91f2a83ad59e1d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6861097256659302324, guid: e9b1cc05dc2135244b91f2a83ad59e1d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2280,6 +2325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1513433200144756361, guid: 57b00ce043a30c945bdb0bc2074570ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8456793553933007229, guid: 57b00ce043a30c945bdb0bc2074570ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2369,6 +2419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GravestoneCross
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363966183161547810, guid: d5ec92309b49e7345b3a27cf3ac9e8f4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5870111743715448136, guid: d5ec92309b49e7345b3a27cf3ac9e8f4,
         type: 3}
@@ -2573,6 +2628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lantern
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513433200144756361, guid: 57b00ce043a30c945bdb0bc2074570ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8456793553933007229, guid: 57b00ce043a30c945bdb0bc2074570ea,
         type: 3}
@@ -2979,6 +3039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowl
       objectReference: {fileID: 0}
+    - target: {fileID: 8347862997417349785, guid: e84202fd27061d0449d5802aa6b8bfb2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2569737722194661931, guid: e84202fd27061d0449d5802aa6b8bfb2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3068,6 +3133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105031816721817859, guid: 6c602a35207306c4986c3a5dabe76517,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8578155287034254169, guid: 6c602a35207306c4986c3a5dabe76517,
         type: 3}
@@ -3716,6 +3786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chalice (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5314006721156704553, guid: 7cb3931109918f240ab969770e5f0eeb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8708994753399389052, guid: 7cb3931109918f240ab969770e5f0eeb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3805,6 +3880,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gravestone (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658631276127282431, guid: 5f83bb62fcfe8894989a41d09f456de6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2449584512258102345, guid: 5f83bb62fcfe8894989a41d09f456de6,
         type: 3}
@@ -3957,6 +4037,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1513433200144756361, guid: 57b00ce043a30c945bdb0bc2074570ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8456793553933007229, guid: 57b00ce043a30c945bdb0bc2074570ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4052,7 +4137,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &1006108268
 MeshCollider:
@@ -4789,6 +4874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1513433200144756361, guid: 57b00ce043a30c945bdb0bc2074570ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8456793553933007229, guid: 57b00ce043a30c945bdb0bc2074570ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4952,6 +5042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cross
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771511990243398627, guid: e9b1cc05dc2135244b91f2a83ad59e1d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6861097256659302324, guid: e9b1cc05dc2135244b91f2a83ad59e1d,
         type: 3}
@@ -5300,6 +5395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bowl (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347862997417349785, guid: e84202fd27061d0449d5802aa6b8bfb2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2569737722194661931, guid: e84202fd27061d0449d5802aa6b8bfb2,
         type: 3}
@@ -6171,6 +6271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gravestone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1658631276127282431, guid: 5f83bb62fcfe8894989a41d09f456de6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2449584512258102345, guid: 5f83bb62fcfe8894989a41d09f456de6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6393,6 +6498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468683554839094742, guid: eae85fa872015c94cb2af431273bf2e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1706281368688257223, guid: eae85fa872015c94cb2af431273bf2e0,
         type: 3}
@@ -6722,6 +6832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gravestone
       objectReference: {fileID: 0}
+    - target: {fileID: 1658631276127282431, guid: 5f83bb62fcfe8894989a41d09f456de6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2449584512258102345, guid: 5f83bb62fcfe8894989a41d09f456de6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6796,6 +6911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AltarWood
+      objectReference: {fileID: 0}
+    - target: {fileID: 3006350461355459974, guid: c8de5c11eee547542b598a5a4879b9bb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7288455363199674056, guid: c8de5c11eee547542b598a5a4879b9bb,
         type: 3}
@@ -6886,6 +7006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611115854100416271, guid: 0ec7928b02434fd42a17934e5e9ecd0e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6648605522423984990, guid: 0ec7928b02434fd42a17934e5e9ecd0e,
         type: 3}
@@ -7243,6 +7368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Altar
       objectReference: {fileID: 0}
+    - target: {fileID: 3847798507640625376, guid: e8c685b74b486e34da11babba19ee9c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 9098114437784608457, guid: e8c685b74b486e34da11babba19ee9c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7333,6 +7463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coffin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5220787291734788221, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3515703677036808966, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7402,6 +7537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4295499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413703593182967229, guid: 3c15e6b1aeebc3c46b750d6bce8377bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c15e6b1aeebc3c46b750d6bce8377bf, type: 3}
@@ -8028,6 +8168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shovel
       objectReference: {fileID: 0}
+    - target: {fileID: 5137998279959895506, guid: 6ab5c9866a0591f4396c8a5722a1d975,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 934226520787112104, guid: 6ab5c9866a0591f4396c8a5722a1d975,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8514,6 +8659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crypt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183462784963991514, guid: f6dbd97ad38e2894ead0bda5dd5b2a22,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5684051622077294733, guid: f6dbd97ad38e2894ead0bda5dd5b2a22,
         type: 3}

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour, IPlayerMovement
+public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 {
     public float speed = 6f;
     private Vector3 movement;
@@ -152,5 +152,15 @@ public class PlayerController : MonoBehaviour, IPlayerMovement
         {
             gun.isFiring = false;
         }
+    }
+
+    public void TakeDamage(int amount)
+    {
+
+    }
+
+    public void Die()
+    {
+
     }
 }
