@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IPlayerHealth
 {
-    void TakeDamage(int amount);
+    void TakeDamage();
     void Die();
 }

@@ -22,6 +22,18 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     private ScenesManager scenesManager;
     private SoundManager soundManager;
 
+    [SerializeField]
+    private Slider healthBar;
+
+    [SerializeField]
+    private int startingHealth;
+
+    [SerializeField]
+    private int currentHealth;
+
+    [SerializeField]
+    private int healthReduceAmount;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -31,6 +43,8 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         levelTransition = FindObjectOfType<LevelTransition>();
         scenesManager = FindObjectOfType<ScenesManager>();
         soundManager = FindObjectOfType<SoundManager>();
+
+        currentHealth = startingHealth;
     }
 
     void Start()
@@ -55,21 +69,26 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag.Equals(Tags.BlueJewel))
-        {            
-            levelTransition.FirstLevelIsPassed();
-            PlayerCollectedBlueJewel(other);
-        }
+        //if(other.tag.Equals(Tags.BlueJewel))
+        //{            
+        //    levelTransition.FirstLevelIsPassed();
+        //    PlayerCollectedBlueJewel(other);
+        //}
 
-        else if(other.tag.Equals(Tags.PinkJewel))
-        {
-            levelTransition.SecondLevelIsPassed();
-            PlayerCollectedPinkJewel(other);
-        }
+        //else if(other.tag.Equals(Tags.PinkJewel))
+        //{
+        //    levelTransition.SecondLevelIsPassed();
+        //    PlayerCollectedPinkJewel(other);
+        //}
 
-        else if (other.tag.Equals(Tags.YellowJewel))
+        //else if (other.tag.Equals(Tags.YellowJewel))
+        //{
+        //    PlayerCollectedYellowJewel(other);
+        //}
+
+        if(other.tag.Equals(Tags.Enemy))
         {
-            PlayerCollectedYellowJewel(other);
+            TakeDamage();
         }
     }
 
@@ -154,13 +173,44 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         }
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage()
     {
+        // Set the damaged flag so the screen will flash.
+        damaged = true;
 
+        // Reduce the current health by the damage amount.
+        currentHealth -= healthReduceAmount;
+
+        // Set the health bar's value to the current health.
+        healthBar.value = currentHealth;
+
+        // Play the hurt sound effect.
+        //playerAudio.Play();
+
+        // If the player has lost all it's health and the death flag hasn't been set yet...
+        if (currentHealth <= 0 && !isDead)
+        {
+            // ... it should die.
+            Die();
+        }
     }
 
     public void Die()
     {
+        isDead = true;
 
+        // Turn off any remaining shooting effects.
+        //playerShooting.DisableEffects();
+
+        // Tell the animator that the player is dead.
+        animator.SetTrigger("Die");
+
+        // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
+        //playerAudio.clip = deathClip;
+        //playerAudio.Play();
+
+        // Turn off the movement and shooting scripts.
+        //playerMovement.enabled = false;
+        //playerShooting.enabled = false;
     }
 }

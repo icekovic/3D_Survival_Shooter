@@ -6,11 +6,13 @@ public class LevelTransition : MonoBehaviour
 {
     private bool firstLevelPassed;
     private bool secondLevelPassed;
+    private bool thirdLevelPassed;
 
     private void Awake()
     {
         firstLevelPassed = false;
         secondLevelPassed = false;
+        thirdLevelPassed = false;
     }
 
     void Start()
@@ -28,6 +30,11 @@ public class LevelTransition : MonoBehaviour
         return secondLevelPassed;
     }
 
+    public bool GetThirdLevelPassed()
+    {
+        return thirdLevelPassed;
+    }
+
     public void FirstLevelIsPassed()
     {
         firstLevelPassed = true;
@@ -36,5 +43,10 @@ public class LevelTransition : MonoBehaviour
     public void SecondLevelIsPassed()
     {
         secondLevelPassed = true;
+    }
+
+    public void ThirdLevelIsPassed()
+    {
+        thirdLevelPassed = true;
     }
 }
