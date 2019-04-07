@@ -69,55 +69,38 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     private void OnTriggerEnter(Collider other)
     {
-        //if(other.tag.Equals(Tags.BlueJewel))
-        //{            
-        //    levelTransition.FirstLevelIsPassed();
-        //    PlayerCollectedBlueJewel(other);
-        //}
-
-        //else if(other.tag.Equals(Tags.PinkJewel))
-        //{
-        //    levelTransition.SecondLevelIsPassed();
-        //    PlayerCollectedPinkJewel(other);
-        //}
-
-        //else if (other.tag.Equals(Tags.YellowJewel))
-        //{
-        //    PlayerCollectedYellowJewel(other);
-        //}
-
         if(other.tag.Equals(Tags.Enemy))
         {
             TakeDamage();
         }
     }
 
-    private void PlayerCollectedYellowJewel(Collider other)
-    {
-        soundManager.StopBackgroundMusic();
-        soundManager.PlayGameCompletedSound();
-        scenesManager.CloseHud();
-        scenesManager.ShowGameCompletedMenu();
-        Destroy(other);
-    }
+    //private void PlayerCollectedYellowJewel(Collider other)
+    //{
+    //    soundManager.StopBackgroundMusic();
+    //    soundManager.PlayGameCompletedSound();
+    //    scenesManager.CloseHud();
+    //    scenesManager.ShowGameCompletedMenu();
+    //    Destroy(other);
+    //}
 
-    private void PlayerCollectedPinkJewel(Collider other)
-    {
-        soundManager.StopBackgroundMusic();
-        soundManager.PlayLevelCompletedSound();
-        scenesManager.CloseHud();
-        scenesManager.ShowLevelCompletedMenu();
-        Destroy(other.gameObject);
-    }
+    //private void PlayerCollectedPinkJewel(Collider other)
+    //{
+    //    soundManager.StopBackgroundMusic();
+    //    soundManager.PlayLevelCompletedSound();
+    //    scenesManager.CloseHud();
+    //    scenesManager.ShowLevelCompletedMenu();
+    //    Destroy(other.gameObject);
+    //}
 
-    private void PlayerCollectedBlueJewel(Collider other)
-    {
-        soundManager.StopBackgroundMusic();
-        soundManager.PlayLevelCompletedSound();
-        scenesManager.CloseHud();
-        scenesManager.ShowLevelCompletedMenu();
-        Destroy(other.gameObject);
-    }
+    //private void PlayerCollectedBlueJewel(Collider other)
+    //{
+    //    soundManager.StopBackgroundMusic();
+    //    soundManager.PlayLevelCompletedSound();
+    //    scenesManager.CloseHud();
+    //    scenesManager.ShowLevelCompletedMenu();
+    //    Destroy(other.gameObject);
+    //}
 
     public void Move(float horizontal, float vertical)
     {
