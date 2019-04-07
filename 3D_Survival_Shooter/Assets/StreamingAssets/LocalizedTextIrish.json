@@ -2,12 +2,12 @@
   "items": [
     {
       "key": "GameName",
-      "value": "SHOOTER MARTHANAIS"
+      "value": "MARTHANAIS LÁMHACH"
     },
 
     {
       "key": "SelectLanguage",
-      "value": "TÉANAMH SEACHT"
+      "value": "ROGHNAIGH TEANGA"
     },
 
     {
@@ -17,22 +17,22 @@
 
     {
       "key": "Options",
-      "value": "SOCRUITHE"
+      "value": "SUÍMH"
     },
 
     {
       "key": "Sound",
-      "value": "FUAIME"
+      "value": "FUAIM"
     },
 
     {
       "key": "VideoQuality",
-      "value": "Cáilíocht físeáin"
+      "value": "CAIGHDEÁN FÍSEÁIN"
     },
 
     {
       "key": "Resolution",
-      "value": "Réiteach"
+      "value": "RÉITEACH"
     },
 
     {
@@ -47,77 +47,77 @@
 
     {
       "key": "EnemiesKilled",
-      "value": "Naimhde a maraíodh: "
+      "value": "LÍON NA NAIMHDE A MARAÍODH: "
     },
 
     {
       "key": "Score",
-      "value": "Scór: "
+      "value": "SCÓR: "
     },
 
     {
       "key": "Level1",
-      "value": "Leibhéal 1"
+      "value": "LEIBHÉAL 1"
     },
 
     {
       "key": "Level2",
-      "value": "Leibhéal 2"
+      "value": "LEIBHÉAL 2"
     },
 
     {
       "key": "Level3",
-      "value": "leibhéal 3"
+      "value": "LEIBHÉAL 3"
     },
 
     {
       "key": "GameIsPaused",
-      "value": "LUICHE SOS"
+      "value": "CUICHE SOS"
     },
 
     {
       "key": "Resume",
-      "value": "Cluiche atosú"
+      "value": "CLUICHE AISCE"
     },
 
     {
       "key": "RestartLevel",
-      "value": "Leibhéal atosú"
+      "value": "ATOSÚ LEIBHÉAL"
     },
 
     {
       "key": "MainMenu",
-      "value": "Príomhroghchlár"
+      "value": "PRÍOMHROGHCHLÁR"
     },
 
     {
       "key": "PlayerDied",
-      "value": "D'éag tú!"
+      "value": "FUAIR TÚ BÁS!"
     },
 
     {
       "key": "LevelCompleted",
-      "value": "Dá an leibhéal críochnaithe agat!"
+      "value": "TÁ AN LEIBHÉAL CRÍOCHNAITHE AGAT!"
     },
 
     {
       "key": "NextLevel",
-      "value": "An chéad leibhéal eile"
+      "value": "AN CHÉAD LEIBHÉAL EILE"
     },
 
     {
       "key": "GameCompleted",
-      "value": "Comhghairdeas! tá tú tar éis an cluiche a rith!"
+      "value": "COMHGHAIRDEAS! TÁ AN CLUICHE RITE AGAT!"
     },
 
     {
       "key": "RestartGame",
-      "value": "Cluiche atosú"
+      "value": "ATOSÚ CLUICHE"
     },
 
     {
       "key": "GameOver",
-      "value": "Cluiche críochnaithe! chaill tu!"
+      "value": "CLUICHE CRÍOCHNAITHE! CHAILL TU!"
     }
   ]
 }

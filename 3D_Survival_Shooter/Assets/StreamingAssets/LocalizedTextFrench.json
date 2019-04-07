@@ -52,7 +52,7 @@
 
     {
       "key": "Score",
-      "value": "LE SCORE: "
+      "value": "MARQUER DES POINTS: "
     },
 
     {
@@ -72,7 +72,7 @@
 
     {
       "key": "GameIsPaused",
-      "value": "JEU EST PASSÉ"
+      "value": "LE JEU EST EN PAUSE"
     },
 
     {
@@ -97,7 +97,7 @@
 
     {
       "key": "LevelCompleted",
-      "value": "VOUS AVEZ COMPLÉTÉ LE NIVEAU!"
+      "value": "VOUS AVEZ TERMINE LE NIVEAU!"
     },
 
     {
@@ -107,7 +107,7 @@
 
     {
       "key": "GameCompleted",
-      "value": "TOUTES NOS FÉLICITATIONS! VOUS AVEZ PASSÉ LE JEU!"
+      "value": "TOUTES NOS FELICITATIONS! VOUS AVEZ PASSE LE JEU!"
     },
 
     {
