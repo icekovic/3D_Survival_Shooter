@@ -2,24 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPoints
+public static class EnemyPoints
 {
-    private int zombunny = 50;
-    private int zombear = 100;
-    private int hellephant = 150;
-
-    public int GetZombunnyValue()
-    {
-        return zombunny;
-    }
-
-    public int GetZombearValue()
-    {
-        return zombear;
-    }
-
-    public int GetHellephantValue()
-    {
-        return hellephant;
-    }
+    public static int zombunny = 50;
+    public static int zombear = 100;
+    public static int hellephant = 150;
 }
