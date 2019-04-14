@@ -92,4 +92,16 @@ public class HudManager : MonoBehaviour
             PlayerPrefs.SetInt("Score", scoreCounter);
         }
     }
+
+    public void ResetEnemiesKilledCounter()
+    {
+        enemiesKilledCounter = 0;
+        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilledCounter);
+    }
+
+    public void ResetScoreCounter()
+    {
+        scoreCounter = 0;
+        PlayerPrefs.SetInt("Score", scoreCounter);
+    }
 }

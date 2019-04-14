@@ -27,11 +27,13 @@ public class ScenesManager : MonoBehaviour
     private GameObject hud;
 
     private LevelTransition levelTransition;
+    private HudManager hudManager;
 
     private void Awake()
     {
         isPaused = false;
         levelTransition = FindObjectOfType<LevelTransition>();
+        hudManager = FindObjectOfType<HudManager>();
 
         pauseMenu.SetActive(false);
         playerDiedMenu.SetActive(false);
@@ -84,6 +86,11 @@ public class ScenesManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
+
+        hudManager.ResetEnemiesKilledCounter();
+        hudManager.ResetLivesCounter();
+        hudManager.ResetScoreCounter();
+
         SceneManager.LoadScene(Scenes.FirstLevel);
     }
 

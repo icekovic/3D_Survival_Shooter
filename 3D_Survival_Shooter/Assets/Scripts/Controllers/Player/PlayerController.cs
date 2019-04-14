@@ -122,26 +122,6 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         Destroy(other);
     }
 
-    //private void PlayerCollectedYellowJewel(Collider other)
-    //{
-    //    soundManager.StopBackgroundMusic();
-    //    soundManager.PlayGameCompletedSound();
-    //    scenesManager.CloseHud();
-    //    scenesManager.ShowGameCompletedMenu();
-    //    Destroy(other);
-    //}
-
-    //private void PlayerCollectedPinkJewel(Collider other)
-    //{
-    //    soundManager.StopBackgroundMusic();
-    //    soundManager.PlayLevelCompletedSound();
-    //    scenesManager.CloseHud();
-    //    scenesManager.ShowLevelCompletedMenu();
-    //    Destroy(other.gameObject);
-    //}
-
-
-
     public void Move(float horizontal, float vertical)
     {
         movement.Set(horizontal, 0f, vertical);

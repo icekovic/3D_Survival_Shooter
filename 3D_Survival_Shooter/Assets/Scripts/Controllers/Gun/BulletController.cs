@@ -7,7 +7,15 @@ using UnityEngine.SceneManagement;
 public class BulletController : MonoBehaviour
 {
     public float speed;
+
+    private HudManager hudManager;
     private string activeScene;
+
+    private void Awake()
+    {
+        activeScene = SceneManager.GetActiveScene().name;
+        hudManager = FindObjectOfType<HudManager>();
+    }
 
     private void FixedUpdate()
     {
@@ -18,6 +26,8 @@ public class BulletController : MonoBehaviour
     {
         if(other.tag.Equals(Tags.Enemy))
         {
+            hudManager.IncreaseScoreCounter();
+            hudManager.IncrementEnemiesKilledCounter();
             DestroyEnemy(other);
         }
     }
