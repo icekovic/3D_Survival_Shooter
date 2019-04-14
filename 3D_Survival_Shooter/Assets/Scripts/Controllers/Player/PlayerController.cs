@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     int floorMask;
 
     private bool isWalking = false;
-    bool isDead = false;
-    bool damaged = false;
+    //bool isDead = false;
+    //bool damaged = false;
 
     public GunController gun;
     private LevelTransition levelTransition;
@@ -179,7 +179,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     public void TakeDamage()
     {
         // Set the damaged flag so the screen will flash.
-        damaged = true;
+        //damaged = true;
 
         // Reduce the current health by the damage amount.
         currentHealth -= healthReduceAmount;
@@ -187,11 +187,9 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         // Set the health bar's value to the current health.
         healthBar.value = currentHealth;
 
-        // Play the hurt sound effect.
-        //playerAudio.Play();
-
         // If the player has lost all it's health and the death flag hasn't been set yet...
-        if (currentHealth <= 0 && !isDead)
+        //if (currentHealth <= 0 && !isDead)
+        if (currentHealth <= 0)
         {
             // ... it should die.
             Die();
@@ -200,11 +198,13 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     public void Die()
     {
-        isDead = true;
+        //isDead = true;
         hudManager.TakeOneLife();
 
         if(hudManager.GetLivesCounter() > 0)
         {
+            soundManager.StopBackgroundMusic();
+            soundManager.PlayPlayerDiedSound();
             scenesManager.ShowPlayerDiedMenu();
             scenesManager.CloseHud();
             Destroy(this.gameObject);   //player is destroyed
@@ -216,21 +216,5 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
             scenesManager.CloseHud();
             Destroy(this.gameObject);   //player is destroyed
         }
-
-        
-
-        // Turn off any remaining shooting effects.
-        //playerShooting.DisableEffects();
-
-        // Tell the animator that the player is dead.
-        //animator.SetTrigger("Die");
-
-        // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
-        //playerAudio.clip = deathClip;
-        //playerAudio.Play();
-
-        // Turn off the movement and shooting scripts.
-        //playerMovement.enabled = false;
-        //playerShooting.enabled = false;
     }
 }

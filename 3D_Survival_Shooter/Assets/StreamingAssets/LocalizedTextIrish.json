@@ -102,7 +102,7 @@
 
     {
       "key": "LevelCompleted",
-      "value": "TÁ AN LEIBHÉAL CRÍOCHNAITHE AGAT!"
+      "value": "LEIBHÉAL A CHOMHLÍONADH!"
     },
 
     {
@@ -112,7 +112,7 @@
 
     {
       "key": "GameCompleted",
-      "value": "COMHGHAIRDEAS! TÁ AN CLUICHE RITE AGAT!"
+      "value": "TÁ AN CLUICHE RITE AGAT!"
     },
 
     {
@@ -122,7 +122,7 @@
 
     {
       "key": "GameOver",
-      "value": "CLUICHE CRÍOCHNAITHE! CHAILL TU!"
+      "value": "CLUICHE CRÍOCHNAITHE!"
     }
   ]
 }

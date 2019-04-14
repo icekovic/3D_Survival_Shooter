@@ -102,7 +102,7 @@
 
     {
       "key": "LevelCompleted",
-      "value": "VOUS AVEZ TERMINE LE NIVEAU!"
+      "value": "NIVEAU TERMINÉ!"
     },
 
     {
@@ -112,7 +112,7 @@
 
     {
       "key": "GameCompleted",
-      "value": "TOUTES NOS FELICITATIONS! VOUS AVEZ PASSE LE JEU!"
+      "value": "JEU TERMINE!"
     },
 
     {
@@ -122,7 +122,7 @@
 
     {
       "key": "GameOver",
-      "value": "JEU TERMINÉ! TU AS PERDU!"
+      "value": "JEU TERMINE!"
     }
   ]
 }

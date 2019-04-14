@@ -25,6 +25,10 @@ public class SoundManager : MonoBehaviour
     private AudioClip gunshotSound;
     private AudioSource gunshotAudioSource { get { return GetComponent<AudioSource>(); } }
 
+    [SerializeField]
+    private AudioClip playerDiedSound;
+    private AudioSource playerDiedAudioSource { get { return GetComponent<AudioSource>(); } }
+
     private void Awake()
     {
         gameObject.AddComponent<AudioSource>();
@@ -40,6 +44,12 @@ public class SoundManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void PlayPlayerDiedSound()
+    {
+        playerDiedAudioSource.clip = playerDiedSound;
+        playerDiedAudioSource.PlayOneShot(playerDiedSound);
     }
 
     public void PlayGunshotSound()
