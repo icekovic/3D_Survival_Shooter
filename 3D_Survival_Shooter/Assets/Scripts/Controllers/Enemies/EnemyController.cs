@@ -5,12 +5,14 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    private Transform player;
+    //private Transform player;
+    private GameObject player;
     private NavMeshAgent navMesh;
 
     private void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        //player = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player");
         navMesh = GetComponent<NavMeshAgent>();
     }
 
@@ -21,6 +23,11 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        navMesh.SetDestination(player.position);
+        //navMesh.SetDestination(player.position);
+
+        if(player != null)
+        {
+            navMesh.SetDestination(player.transform.position);
+        }
     }
 }

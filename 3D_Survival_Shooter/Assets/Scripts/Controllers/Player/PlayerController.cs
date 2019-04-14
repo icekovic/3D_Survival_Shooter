@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     private LevelTransition levelTransition;
     private ScenesManager scenesManager;
     private SoundManager soundManager;
+    private HudManager hudManager;
 
     [SerializeField]
     private Slider healthBar;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         levelTransition = FindObjectOfType<LevelTransition>();
         scenesManager = FindObjectOfType<ScenesManager>();
         soundManager = FindObjectOfType<SoundManager>();
+        hudManager = FindObjectOfType<HudManager>();
 
         currentHealth = startingHealth;
     }
@@ -73,6 +75,51 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         {
             TakeDamage();
         }
+
+        if(other.tag.Equals(Tags.GreenJewel))
+        {
+            levelTransition.FirstLevelIsPassed();
+            PlayerCollectedGreenJewel(other);
+        }
+
+        if(other.tag.Equals(Tags.PinkJewel))
+        {
+            levelTransition.SecondLevelIsPassed();
+            PlayerCollectedPinkJewel(other);
+        }
+
+        if(other.tag.Equals(Tags.YellowJewel))
+        {
+            levelTransition.ThirdLevelIsPassed();
+            PlayerCollectedYellowJewel(other);
+        }
+    }
+
+    private void PlayerCollectedGreenJewel(Collider other)
+    {
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayLevelCompletedSound();
+        scenesManager.CloseHud();
+        scenesManager.ShowLevelCompletedMenu();
+        Destroy(other.gameObject);
+    }
+
+    private void PlayerCollectedPinkJewel(Collider other)
+    {
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayLevelCompletedSound();
+        scenesManager.CloseHud();
+        scenesManager.ShowLevelCompletedMenu();
+        Destroy(other.gameObject);
+    }
+
+    private void PlayerCollectedYellowJewel(Collider other)
+    {
+        soundManager.StopBackgroundMusic();
+        soundManager.PlayGameCompletedSound();
+        scenesManager.CloseHud();
+        scenesManager.ShowGameCompletedMenu();
+        Destroy(other);
     }
 
     //private void PlayerCollectedYellowJewel(Collider other)
@@ -93,14 +140,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     //    Destroy(other.gameObject);
     //}
 
-    //private void PlayerCollectedBlueJewel(Collider other)
-    //{
-    //    soundManager.StopBackgroundMusic();
-    //    soundManager.PlayLevelCompletedSound();
-    //    scenesManager.CloseHud();
-    //    scenesManager.ShowLevelCompletedMenu();
-    //    Destroy(other.gameObject);
-    //}
+
 
     public void Move(float horizontal, float vertical)
     {
@@ -181,12 +221,29 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     public void Die()
     {
         isDead = true;
+        hudManager.TakeOneLife();
+
+        if(hudManager.GetLivesCounter() > 0)
+        {
+            scenesManager.ShowPlayerDiedMenu();
+            scenesManager.CloseHud();
+            Destroy(this.gameObject);   //player is destroyed
+        }
+        
+        else
+        {
+            scenesManager.ShowGameOverMenu();
+            scenesManager.CloseHud();
+            Destroy(this.gameObject);   //player is destroyed
+        }
+
+        
 
         // Turn off any remaining shooting effects.
         //playerShooting.DisableEffects();
 
         // Tell the animator that the player is dead.
-        animator.SetTrigger("Die");
+        //animator.SetTrigger("Die");
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
         //playerAudio.clip = deathClip;
