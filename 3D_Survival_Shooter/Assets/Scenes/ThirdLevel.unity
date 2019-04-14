@@ -2777,8 +2777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd1247ea17baa842aebc62f2ede4baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  livesText: {fileID: 1323848958}
   enemiesKilledText: {fileID: 1602636968}
-  livesText: {fileID: 1328625564}
   scoreText: {fileID: 990610394}
 --- !u!1001 &392550474
 PrefabInstance:
@@ -9660,7 +9660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &1323848959
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,15 +7,11 @@ using UnityEngine.SceneManagement;
 public class BulletController : MonoBehaviour
 {
     public float speed;
+    private HudManager hudManager;
 
-    private void Start()
+    private void Awake()
     {
-
-    }
-
-    private void Update()
-    {
-
+        hudManager = FindObjectOfType<HudManager>();
     }
 
     private void FixedUpdate()
@@ -33,6 +29,8 @@ public class BulletController : MonoBehaviour
 
     private void DestroyEnemy(Collider other)
     {
+        hudManager.IncrementEnemiesKilledCounter();
+        hudManager.IncreaseScoreCounter();      
         Destroy(other.gameObject);
         Destroy(this.gameObject);
     }

@@ -7,83 +7,89 @@ using UnityEngine.UI;
 public class HudManager : MonoBehaviour
 {
     [SerializeField]
-    private Text enemiesKilledText;
-    private int enemiesKilled;
+    private Text livesText;
+    private int livesCounter;
 
     [SerializeField]
-    private Text livesText;
-    private int lives;
+    private Text enemiesKilledText;
+    private int enemiesKilledCounter;
 
     [SerializeField]
     private Text scoreText;
-    private int score;
+    private int scoreCounter;
 
-    private Scene activeScene;
+    private string activeScene;
+
+    private void Awake()
+    {
+        activeScene = SceneManager.GetActiveScene().name;
+    }
 
     void Start()
     {
-        enemiesKilled = PlayerPrefs.GetInt("EnemiesKilled");
-        lives = PlayerPrefs.GetInt("Lives");
-        score = PlayerPrefs.GetInt("Score");
-
-        activeScene = SceneManager.GetActiveScene();
+        livesCounter = PlayerPrefs.GetInt("Lives");
+        enemiesKilledCounter = PlayerPrefs.GetInt("EnemiesKilled");
+        scoreCounter = PlayerPrefs.GetInt("Score");
     }
 
     void Update()
     {
-        enemiesKilledText.text = enemiesKilled.ToString();
-        livesText.text = lives.ToString();
-        scoreText.text = score.ToString();
-    }
-
-    public void IncreaseEnemiesKilledCounter()
-    {
-        enemiesKilled++;
-        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilled);
-    }
-
-    public void IncreaseScoreCounter()
-    {
-        if(activeScene.name.Equals(Scenes.FirstLevel))
-        {
-            score = score + EnemyPoints.zombunny;
-            PlayerPrefs.SetInt("Score", score);
-        }
-        
-        else if(activeScene.name.Equals(Scenes.SecondLevel))
-        {
-            score = score + EnemyPoints.zombear;
-            PlayerPrefs.SetInt("Score", score);
-        }
-
-        else if (activeScene.name.Equals(Scenes.ThirdLevel))
-        {
-            score = score + EnemyPoints.hellephant;
-            PlayerPrefs.SetInt("Score", score);
-        }
+        livesText.text = livesCounter.ToString();
+        enemiesKilledText.text = enemiesKilledCounter.ToString();
+        scoreText.text = scoreCounter.ToString();
     }
 
     public void TakeOneLife()
     {
-        lives--;
-        PlayerPrefs.SetInt("Lives", lives);
+        livesCounter--;
+        PlayerPrefs.SetInt("Lives", livesCounter);
     }
 
-    public void ResetEnemiesKilledCounter()
+    public int GetLivesCounter()
     {
-        enemiesKilled = 0;
-        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilled);
-    }
-
-    public void ResetScoreCounter()
-    {
-        score = 0;
-        PlayerPrefs.SetInt("Score", score);
+        return livesCounter;
     }
 
     public void ResetLivesCounter()
     {
-        lives = 3;
-        PlayerPrefs.SetInt("Lives", lives);
+        livesCounter = 3;
+        PlayerPrefs.SetInt("Lives", livesCounter);
+    }
+    
+    public int GetEnemiesKilledCounter()
+    {
+        return enemiesKilledCounter;
+    }
+
+    public void IncrementEnemiesKilledCounter()
+    {
+        enemiesKilledCounter++;
+        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilledCounter);
+    }
+
+    public int GetScoreCounter()
+    {
+        return scoreCounter;
+    }
+
+    public void IncreaseScoreCounter()
+    {
+        if(activeScene.Equals(Scenes.FirstLevel))
+        {
+            scoreCounter += EnemyPoints.zombunny;
+            PlayerPrefs.SetInt("Score", scoreCounter);
+        }
+
+        else if(activeScene.Equals(Scenes.SecondLevel))
+        {
+            scoreCounter += EnemyPoints.zombear;
+            PlayerPrefs.SetInt("Score", scoreCounter);
+        }
+
+        else if(activeScene.Equals(Scenes.ThirdLevel))
+        {
+            scoreCounter += EnemyPoints.hellephant;
+            PlayerPrefs.SetInt("Score", scoreCounter);
+        }
     }
 }

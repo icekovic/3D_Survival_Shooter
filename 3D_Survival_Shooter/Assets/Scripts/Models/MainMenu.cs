@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private int livesCounter;
 
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private int enemiesKilledCounter;
+
+    [SerializeField]
+    private int scoreCounter;
 
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("Lives", livesCounter);
+        PlayerPrefs.SetInt("EnemiesKilled", enemiesKilledCounter);
+        PlayerPrefs.SetInt("Score", scoreCounter);
+
+        Time.timeScale = 1f;
         SceneManager.LoadScene(Scenes.FirstLevel);
     }
 
