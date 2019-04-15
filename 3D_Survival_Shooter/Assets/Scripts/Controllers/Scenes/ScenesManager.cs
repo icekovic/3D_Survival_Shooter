@@ -63,6 +63,11 @@ public class ScenesManager : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f;
+
+        hudManager.ResetEnemiesKilledCounter();
+        hudManager.ResetLivesCounter();
+        hudManager.ResetScoreCounter();
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -150,6 +155,7 @@ public class ScenesManager : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;    //paused game state
         pauseMenu.SetActive(true);
+        CloseHud();
     }
 
     public void CloseHud()
