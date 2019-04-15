@@ -14,8 +14,6 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
     int floorMask;
 
     private bool isWalking = false;
-    //bool isDead = false;
-    //bool damaged = false;
 
     public GunController gun;
     private LevelTransition levelTransition;
@@ -178,27 +176,16 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     public void TakeDamage()
     {
-        // Set the damaged flag so the screen will flash.
-        //damaged = true;
-
-        // Reduce the current health by the damage amount.
         currentHealth -= healthReduceAmount;
-
-        // Set the health bar's value to the current health.
         healthBar.value = currentHealth;
-
-        // If the player has lost all it's health and the death flag hasn't been set yet...
-        //if (currentHealth <= 0 && !isDead)
-        if (currentHealth <= 0)
+        if(currentHealth <= 0)
         {
-            // ... it should die.
             Die();
         }
     }
 
     public void Die()
     {
-        //isDead = true;
         hudManager.TakeOneLife();
 
         if(hudManager.GetLivesCounter() > 0)
