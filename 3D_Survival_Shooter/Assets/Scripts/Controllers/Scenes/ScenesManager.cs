@@ -65,7 +65,6 @@ public class ScenesManager : MonoBehaviour
         Time.timeScale = 1f;
 
         hudManager.ResetEnemiesKilledCounter();
-        hudManager.ResetLivesCounter();
         hudManager.ResetScoreCounter();
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

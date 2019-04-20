@@ -190,14 +190,12 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
         if(hudManager.GetLivesCounter() > 0)
         {
-            //soundManager.StopBackgroundMusic();
-
             if(levelTransition.GetFirstLevelPassed())
             {
                 soundManager.StopBackgroundMusicFirstLevel();
             }
 
-            if (levelTransition.GetSecondLevelPassed())
+            else if (levelTransition.GetSecondLevelPassed())
             {
                 soundManager.StopBackgroundMusicSecondLevel();
             }
@@ -215,6 +213,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
         
         else
         {
+            soundManager.PlayGameOverSound();
             scenesManager.ShowGameOverMenu();
             scenesManager.CloseHud();
             Destroy(this.gameObject);   //player is destroyed
