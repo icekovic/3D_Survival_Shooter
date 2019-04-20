@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     private void PlayerCollectedGreenJewel(Collider other)
     {
-        soundManager.StopBackgroundMusic();
+        soundManager.StopBackgroundMusicFirstLevel();
         soundManager.PlayLevelCompletedSound();
         scenesManager.CloseHud();
         scenesManager.ShowLevelCompletedMenu();
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     private void PlayerCollectedPinkJewel(Collider other)
     {
-        soundManager.StopBackgroundMusic();
+        soundManager.StopBackgroundMusicSecondLevel();
         soundManager.PlayLevelCompletedSound();
         scenesManager.CloseHud();
         scenesManager.ShowLevelCompletedMenu();
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
     private void PlayerCollectedYellowJewel(Collider other)
     {
-        soundManager.StopBackgroundMusic();
+        soundManager.StopBackgroundMusicThirdLevel();
         soundManager.PlayGameCompletedSound();
         scenesManager.CloseHud();
         scenesManager.ShowGameCompletedMenu();
@@ -190,7 +190,23 @@ public class PlayerController : MonoBehaviour, IPlayerMovement, IPlayerHealth
 
         if(hudManager.GetLivesCounter() > 0)
         {
-            soundManager.StopBackgroundMusic();
+            //soundManager.StopBackgroundMusic();
+
+            if(levelTransition.GetFirstLevelPassed())
+            {
+                soundManager.StopBackgroundMusicFirstLevel();
+            }
+
+            if (levelTransition.GetSecondLevelPassed())
+            {
+                soundManager.StopBackgroundMusicSecondLevel();
+            }
+
+            else
+            {
+                soundManager.StopBackgroundMusicThirdLevel();
+            }
+
             soundManager.PlayPlayerDiedSound();
             scenesManager.ShowPlayerDiedMenu();
             scenesManager.CloseHud();

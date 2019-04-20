@@ -407,7 +407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 151, y: 130}
+  m_AnchoredPosition: {x: 159, y: 130}
   m_SizeDelta: {x: 90, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17644550
@@ -525,8 +525,62 @@ Transform:
   - {fileID: 1625436051}
   - {fileID: 166075835}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &28685011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28685012}
+  - component: {fileID: 28685013}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28685012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28685011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120.241165, y: 225.70024, z: 135.12491}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28685013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28685011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df92faa1fb289c0489fd8b600d9fa636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusicFirstLevel: {fileID: 8300000, guid: 9066c73baf220794a83756294a3a0e8c,
+    type: 3}
+  backgroundMusicSecondLevel: {fileID: 8300000, guid: c7bdc24dfa28fc645ae8d91d21b4b260,
+    type: 3}
+  backgroundMusicThirdLevel: {fileID: 8300000, guid: eda6efaf954459845b4825a7e03c7846,
+    type: 3}
+  levelCompleted: {fileID: 8300000, guid: 153f171fba7462243a249480e4657706, type: 3}
+  gameCompleted: {fileID: 8300000, guid: 3b2b067fef4da9d41977389dfe5f13d6, type: 3}
+  gameOver: {fileID: 8300000, guid: eedeb231e0551c4429ffb8cb760b97ad, type: 3}
+  gunshotSound: {fileID: 8300000, guid: 27d119586bd09e54da5a7fe2cbe23b0e, type: 3}
+  playerDiedSound: {fileID: 8300000, guid: 944aefa925689184780e3c5564765483, type: 3}
 --- !u!1 &36110436
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 28.1, y: 130}
+  m_AnchoredPosition: {x: 39, y: 130}
   m_SizeDelta: {x: 150, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40102519
@@ -2409,7 +2463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -267, y: 83}
+  m_AnchoredPosition: {x: -225.4, y: 83}
   m_SizeDelta: {x: 170, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227854744
@@ -3055,7 +3109,7 @@ Transform:
   - {fileID: 75283022}
   - {fileID: 388484913}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &322527476
 GameObject:
@@ -3214,7 +3268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -80.4, y: 130}
+  m_AnchoredPosition: {x: -13.1, y: 130}
   m_SizeDelta: {x: 50, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334134224
@@ -5121,8 +5175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -231.5, y: 130}
-  m_SizeDelta: {x: 250, y: 40}
+  m_AnchoredPosition: {x: -178, y: 130}
+  m_SizeDelta: {x: 260, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583950897
 MonoBehaviour:
@@ -6373,7 +6427,7 @@ RectTransform:
   m_Children:
   - {fileID: 144809561}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10933,7 +10987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -171.6, y: 83}
+  m_AnchoredPosition: {x: -129.1, y: 83}
   m_SizeDelta: {x: 20, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395325433
@@ -11114,7 +11168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1420062486
 MonoBehaviour:
@@ -12743,55 +12797,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1668213228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1668213229}
-  - component: {fileID: 1668213230}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1668213229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668213228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262.5878, y: 172.6333, z: 0.39146805}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1668213230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668213228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df92faa1fb289c0489fd8b600d9fa636, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 8300000, guid: c7bdc24dfa28fc645ae8d91d21b4b260, type: 3}
-  levelCompleted: {fileID: 8300000, guid: 153f171fba7462243a249480e4657706, type: 3}
-  gameCompleted: {fileID: 8300000, guid: 3b2b067fef4da9d41977389dfe5f13d6, type: 3}
-  gameOver: {fileID: 8300000, guid: eedeb231e0551c4429ffb8cb760b97ad, type: 3}
-  gunshotSound: {fileID: 8300000, guid: 27d119586bd09e54da5a7fe2cbe23b0e, type: 3}
-  playerDiedSound: {fileID: 8300000, guid: 944aefa925689184780e3c5564765483, type: 3}
 --- !u!1001 &1677778078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16069,7 +16074,7 @@ Transform:
   - {fileID: 1417206558}
   - {fileID: 1047600044}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1960653762
 PrefabInstance:
